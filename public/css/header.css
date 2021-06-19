@@ -6,8 +6,6 @@ header{
     font-family: 'raleway';
 }
 
-
-
 header a{
    width: auto;
 }
@@ -31,7 +29,7 @@ header a{
     list-style: none;
     margin: 1.75em;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -49,12 +47,20 @@ header a{
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .desktop{
         display: none
     }
 
     .mobile{
         display: flex;
+        align-items: center;
+        margin-left: auto;
     }
+
+    .mobile a{
+        color: white;
+        font-size: 1.5em;
+    }
+
 }
