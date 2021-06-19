@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    margin: 0;
+    padding: 1.5em 5%;
+    align-items: center;
+    font-family: 'raleway';
+}
+
+
+
+header a{
+   width: auto;
+}
+
+.logo{
+    width: 60px;
+}
+
+.desktop{
+    margin-left: auto;
+    display: flex;
+    color: white;
+}
+
+.desktop ul{
+    display: flex;
+}
+
+.desktop li{
+    text-decoration: none;
+    list-style: none;
+    margin: 1.75em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.desktop li a:hover{
+    color: var(--dorado);
+}
+
+.desktop li a{
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .desktop{
+        display: none
+    }
+
+    .mobile{
+        display: flex;
+    }
+}

@@ -1,0 +1,9 @@
+footer{
+    height: 5vh;
+    text-align: center;
+    font-family: 'raleway';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
