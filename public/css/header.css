@@ -47,7 +47,7 @@ header a{
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .desktop{
         display: none
     }
@@ -58,9 +58,50 @@ header a{
         margin-left: auto;
     }
 
-    .mobile a{
+    .burger{
         color: white;
         font-size: 1.5em;
+    }
+
+    .burger.closed{
+        visibility: hidden;
+    }
+
+    .mobile-menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--negro);
+        transition: all .5s ease;
+    }
+
+    .mobile-menu a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 1em
+    }
+
+    .mobile-menu.active{
+        display: flex;
+    }
+
+    #cerrar{
+        color: white;
+        font-style: normal;
+        font-weight: 600;
+        color: white;
+        font-size: 1.5em;
+        position: absolute;
+        right: 1.15em;
+        top: 1.25em;
+        cursor: pointer;
     }
 
 }
