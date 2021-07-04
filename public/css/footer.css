@@ -26,7 +26,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 7.5%;
+    padding: 0 5%;
 }
 
 footer div{
@@ -39,6 +39,11 @@ footer div{
  text-transform: uppercase;
  font-family: 'raleway';
  letter-spacing: .1em;
+}
+
+.footer-info a{
+    text-decoration: none;
+    color: white;
 }
 
 .footer-info p{

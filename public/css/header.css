@@ -1,3 +1,11 @@
+:root{
+    --gris-oscuro: #666666;
+    --gris-claro: #7c7c7c;
+    --dorado: #E8C061;
+    --negro: rgb(34, 34, 34);
+    --transition: all .3s ease;
+}
+
 header{
     display: flex;
     margin: 0;
@@ -90,6 +98,12 @@ header a{
 
     .mobile-menu.active{
         display: flex;
+        overflow:hidden;
+        z-index: 2;
+    }
+
+    body.active{
+        overflow: hidden;
     }
 
     #cerrar{
@@ -105,3 +119,5 @@ header a{
     }
 
 }
+
+

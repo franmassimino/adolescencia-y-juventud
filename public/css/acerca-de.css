@@ -1,0 +1,221 @@
+/** acerca de **/
+.acerca-de, .quienes-somos{
+    max-width: 100vw;
+    height: auto;
+    color: white;
+    font-family: 'roboto';
+    padding: 1.5em 7.5%;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'raleway';
+}
+
+hr{
+    background-color: var(--dorado);
+    width: 400px;
+    height: .2em;
+    margin-top: .25em;
+}
+
+p{
+    font-weight: lighter;
+}
+
+.content{
+    margin-top: 2.5vh;
+    line-height: 250%;
+    padding: 1em 5%;
+    text-align: justify;
+    max-width: 1200px;
+    align-self: center;
+}
+
+.visible-content{
+    margin-bottom: .5em;
+    position: relative;
+    font-size: 1.15em;
+}
+
+.hidden-content{
+   display: none;
+   position: relative;
+   font-size: 1.15em;
+
+}
+
+.hidden-content.active{
+    display: block;
+ }
+
+.content h3{
+    color: var(--dorado);
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+.show-content{
+    margin: 1em 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dorado);
+    border: 1px solid var(--dorado);
+    padding: .15em 1.5em;
+    transition: var(--transition);
+    text-transform: uppercase;
+}
+
+.show-content:hover{
+    border-color: white;
+    color: white;
+}
+
+.hide-content{
+    margin: 1em 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dorado);
+    border: 1px solid var(--dorado);
+    padding: .15em 1.5em;
+    transition: var(--transition);
+    text-transform: uppercase;
+}
+
+.hide-content:hover{
+    border-color: white;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.quienes-somos{
+    display: flex;
+    flex-direction: column;
+}
+
+/** quienes-somos **/
+.dr-roldan{
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+    max-width: 1400px;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.left-content{
+    width: 45%;
+    position: relative;
+}
+
+.right-content{
+    width: 50%;
+    position: relative; 
+}
+
+.left-content img{
+    width: 100%;;
+    max-width: 450px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 800px;
+}
+
+.right-content h3{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: 'raleway';
+    margin-bottom: .5em;
+}
+
+.right-content p{
+    line-height: 220%;
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+
+.right-content a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--dorado);
+    border: 1px solid var(--dorado);
+    padding: .5em 1.5em;
+    transition: var(--transition);
+    text-transform: uppercase;
+}
+
+.right-content a:hover{
+    border-color: white;
+    color: white;
+}
+
+@media (max-width:1024px) {
+    /*acerca de*/
+    .content h3{
+        text-align: center;
+        font-size: 1.25em;
+
+    }
+
+    div.titulo h2{
+        font-size: 2em;
+    }
+
+    a.show-content{
+        width: 100%;
+    }
+
+    .dr-roldan{
+        flex-direction: column;
+    }
+
+    .dr-roldan div{
+        width: 95%;
+        margin-bottom: 1.5em;
+    }
+
+    hr{
+        width: 150px;
+        margin-top: .5em;
+    }
+
+    .quienes-somos h2{
+        margin-top: 1em;
+    }
+
+    .left-content{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .right-content h3{
+        font-size:1.5em;
+        text-align: center;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .right-content a{
+        width: 100%;
+        padding: 1em 1.5em;
+    } 
+
+
+}

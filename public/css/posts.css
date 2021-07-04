@@ -1,0 +1,22 @@
+main{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'roboto';
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+    padding: .5em 2em;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(97, 97, 97, 0.589);
+    transition: all .3s ease;
+}
+
+main a:hover{
+    background: rgba(97, 97, 97, 0.7);
+}
