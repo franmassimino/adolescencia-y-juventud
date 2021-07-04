@@ -9,7 +9,8 @@ app.use(express.static(publicPath))
 
 
 //server
-app.listen(port, () => console.log(`Server live on http://localhost:${port}`))
+app.set("port",process.env.PORT || port)
+app.listen(app.get("port"),() => console.log("Server live on http://localhost:"+app.get("port")))
 
 
 //routes
