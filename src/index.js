@@ -7,6 +7,10 @@ const port = 3030
 const publicPath = path.resolve(__dirname, '../public')
 app.use(express.static(publicPath))
 
+//views
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'))
+
 
 //server
 app.set("port",process.env.PORT || port)

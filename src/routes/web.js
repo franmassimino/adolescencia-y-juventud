@@ -3,19 +3,19 @@ const app = express.Router()
 const path = require('path')
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../views/index.html'))
+    res.render('index')
 })
 
-app.get('/posts.html', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../views/posts.html'))
+app.get('/posts', (req, res) => {
+    res.render('posts.ejs')
 })
 
-app.get('/acerca-de.html', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../views/acerca-de.html'))
+app.get('/about', (req, res) => {
+    res.render('acerca-de.ejs')
 })
 
-app.get('/contacto.html', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../views/contacto.html'))
+app.get('/contacto', (req, res) => {
+    res.render('contacto.ejs')
 })
 
 module.exports = app

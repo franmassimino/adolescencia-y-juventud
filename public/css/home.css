@@ -33,7 +33,7 @@ body{
     letter-spacing: .1em;
     font-weight: bolder;
     margin: 0;
-    margin-bottom: .3em;
+    margin-bottom: .2em;
 }
 
 .hero-content p{
@@ -41,7 +41,7 @@ body{
     font-style:  italic;
     color: var(--dorado);
     font-size: 2em;
-    margin-bottom: 2.5em;
+    margin-bottom: 2em;
     font-weight: 300;
 }
 
