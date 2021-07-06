@@ -7,15 +7,19 @@ app.get('/', (req, res) => {
 })
 
 app.get('/posts', (req, res) => {
-    res.render('posts.ejs')
+    res.render('posts')
 })
 
 app.get('/about', (req, res) => {
-    res.render('acerca-de.ejs')
+    res.render('acerca-de')
 })
 
 app.get('/contacto', (req, res) => {
-    res.render('contacto.ejs')
+    res.render('contacto')
+})
+
+app.get('/posts/header', (req, res) => {
+    res.render('./partials/header')
 })
 
 module.exports = app

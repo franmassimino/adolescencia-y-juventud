@@ -19,7 +19,6 @@ main{
     margin: 2.5vh auto;
     height: 65vh;
     max-height: 1100px
-
 }
 
 .form-container{
@@ -45,7 +44,7 @@ form.contact-form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 100%;
     font-family: 'raleway';
     text-transform: uppercase;
@@ -65,7 +64,7 @@ form.contact-form{
     margin-bottom: 4vh;
     outline: none;
     font-weight: 500;
-    padding-left: .25em;
+    padding: .25em;
 }
 
 .contact-form textarea{
@@ -74,7 +73,9 @@ form.contact-form{
     margin-bottom: 2em;
     outline: none;
     font-weight: 500;
-    padding-left: .25em;
+    padding: .25em;
+    max-width: 100%;
+    min-height: 60px
 }
 
 .contact-form button{
@@ -98,6 +99,24 @@ form.contact-form{
     background-color: #ccaa5b
 }
 
+input.error{
+    border: 1px solid red;
+    background-color: rgba(255, 166, 166, 0.3);
+}
+
+textarea.error{
+    border: 1px solid red;
+    background-color: rgba(255, 166, 166, 0.3);
+}
+
+input.success{
+    border: 1px solid rgb(56, 201, 88);
+}
+
+textarea.success{
+    border: 1px solid rgb(0, 255, 55);
+}
+
 
 
 .map, .form-container{
@@ -109,4 +128,49 @@ form.contact-form{
     width: 100%;
     height: 100%;
 }
+
+@media (max-width:1024px) {
+    .map{
+        display: none;
+    }
+
+    .form-container{
+        width: 90%;
+        min-width:300px;
+        max-width: 600px;
+    }
+
+    .contact{
+        width: 90%;
+        max-height: 800px;
+        height: auto;
+    }
+}
+
+@media (max-width:678px) {
+    .form-container{
+        min-width:100px;
+        padding: 2em 5%;
+    }
+
+    .contact{
+        height: auto;
+    }
+
+    .contact-form h3{
+        font-size: 1.25em;
+        margin-bottom: 1.25em;
+    }
+
+    .contact-form label{
+        font-size: .75em;
+    }
+
+    .contact-form button{
+        padding: .5em
+    }
+
+}
+
+
 

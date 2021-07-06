@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Contacto | Adolescencia y Juventud</title>
+    <meta name="description" content="Contactenos para colaborar con nosotros o para resolver cualquier duda.">
+    <meta name="keywords" content="ADOLESCENCIA, JUVENTUD, SALUD, JOVENES, ADICCIONES, PATERNIDAD, MATERNIDAD, SEXUALIDAD, VIOLENCIA, ABUSO, CALIDAD DE VIDA, DESARROLLO, PEDIATRIA">
+    <meta name="autor" content="Doctor Cándido Roldán">
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <link rel="icon" type="image/png" href="/img/logo.png">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/contacto.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Contacto | Adolescencia y Juventud</title>
 </head>
 <body>
     <%- include('partials/header') %>
@@ -20,7 +24,7 @@
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105064.14398381792!2d-58.45424285930964!3d-34.62300838541237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1625436592575!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            </div>
             <div class="form-container">
-                <form class="contact-form" action="https://formspree.io/f/xqkwlnkn" method="POST">
+                <form id="form" class="contact-form" action="https://formspree.io/f/xqkwlnkn" method="POST">
                     <h3>Contactenos!</h3>
                     <label for="nombre">Nombre y apellido</label>
                     <input type="text" name="Nombre" id="nombre">
@@ -28,17 +32,17 @@
                     <input type="email" name="Email" id="email">
                     <label for="mensaje">Mensaje</label>
                     <textarea name="Mensaje" id="mensaje"></textarea>
-                    <button type="submit">Enviar</button>
+                    <button id="enviar" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
     </main>
 
-    
+
     <%- include('partials/footer') %>
 
 
     <script src="./js/navbar.js"></script>
-    <script src="./js/acerca-de.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>
