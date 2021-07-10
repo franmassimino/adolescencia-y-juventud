@@ -18,6 +18,40 @@ function inputValidation(e){
     }
 }
 
+function checkInputs(){
+  const nombreValue = nombre.value.trim();
+  const emailValue = email.value.trim();
+  const mensajeValue = mensaje.value.trim();
+  
+  if (nombreValue === ''){
+    setErrorFor(nombre, 'Este campo no puede estar vacio');
+  } else{
+    setSuccesFor(nombre)
+  }
+  
+  if (emailValue === ''){
+    setErrorFor(email, 'Este campo no puede estar vacio');
+  } else{
+    setSuccesFor(email)
+  }
+  
+  if (mensajeValue === ''){
+    setErrorFor(mensaje, 'Este campo no puede estar vacio');
+  } else{
+    setSuccesFor(mensaje)
+  }
+  
+}
+
+function setErrorFor(input, message) {
+  input.classList.add('error')
+}
+
+function setSuccesFor(input) {
+  input.classList.add('success')
+  input.classList.remove('error')
+}
+
 async function handleSubmit(){
   const formData = new FormData(form)
   const response = await fetch(form.action, {
@@ -34,39 +68,4 @@ async function handleSubmit(){
       alert('Algo salió mal')
   }
 }
-
-function checkInputs(){
-  const nombreValue = nombre.value.trim();
-  const emailValue = email.value.trim();
-  const mensajeValue = mensaje.value.trim();
-
-  if (nombreValue === ''){
-    setErrorFor(nombre, 'Este campo no puede estar vacio');
-  } else{
-    setSuccesFor(nombre)
-  }
-
-  if (emailValue === ''){
-    setErrorFor(email, 'Este campo no puede estar vacio');
-  } else{
-    setSuccesFor(email)
-  }
-
-  if (mensajeValue === ''){
-    setErrorFor(mensaje, 'Este campo no puede estar vacio');
-  } else{
-    setSuccesFor(mensaje)
-  }
-
-}
-
-function setErrorFor(input, message) {
-    input.classList.add('error')
-  }
-  
-function setSuccesFor(input) {
-    input.classList.add('success')
-    input.classList.remove('error')
-  }
-
   

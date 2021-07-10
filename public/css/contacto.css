@@ -56,6 +56,7 @@ form.contact-form{
     align-self: flex-start;
     margin-bottom: .75em;
     color: white;
+    font-size: .85em;
 }
 
 .contact-form input{
@@ -111,10 +112,14 @@ textarea.error{
 
 input.success{
     border: 1px solid rgb(56, 201, 88);
+    background-color: rgb(255, 255, 255);
+
 }
 
 textarea.success{
     border: 1px solid rgb(0, 255, 55);
+    background-color: rgb(255, 255, 255);
+
 }
 
 
@@ -135,7 +140,7 @@ textarea.success{
     }
 
     .form-container{
-        width: 90%;
+        width: 100%;
         min-width:300px;
         max-width: 600px;
     }
@@ -150,11 +155,13 @@ textarea.success{
 @media (max-width:678px) {
     .form-container{
         min-width:100px;
-        padding: 2em 5%;
+        padding: 2em 2.5%;
     }
 
     .contact{
         height: auto;
+        margin: 2.5vh 0;
+        width: 100%;
     }
 
     .contact-form h3{
