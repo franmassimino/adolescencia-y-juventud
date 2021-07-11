@@ -1,25 +1,19 @@
 const express = require('express')
 const app = express.Router()
-const path = require('path')
+const mainController = require('../controllers/mainController.js')
+const postsController = require('../controllers/postsController.js')
 
-app.get('/', (req, res) => {
-    res.render('index')
-})
 
-app.get('/posts', (req, res) => {
-    res.render('posts')
-})
+app.get('/', mainController.index)
 
-app.get('/about', (req, res) => {
-    res.render('acerca-de')
-})
+app.get('/posts', mainController.posts)
 
-app.get('/contacto', (req, res) => {
-    res.render('contacto')
-})
+app.get('/about', mainController.about)
 
-app.get('/posts/header', (req, res) => {
-    res.render('./partials/header')
-})
+app.get('/contacto', mainController.contacto)
+
+//posts
+app.get('/posts/:id', postsController.post)
+
 
 module.exports = app

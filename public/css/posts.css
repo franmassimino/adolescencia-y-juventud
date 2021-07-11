@@ -34,9 +34,10 @@ main{
     border: 1px solid rgba(170, 170, 170, 0.623);
     height: auto;
     margin: 1em 0;
-    max-width: 950px;
+    max-width: 1100px;
+    width: 1050px;
     min-height: 350px;
-    height: 350px;
+    height: 400px;
     padding: 0;
 }
 
@@ -80,6 +81,8 @@ main{
     font-size: .8em;
     margin-bottom: 2em;
     margin-top: 1em;
+    text-align: justify;
+    width: 100%;
 }
 
 a.download{
@@ -92,6 +95,12 @@ a.download{
     text-align: center;
     font-weight: 800;
     width: 100%;
+    transition: all .3s ease;
+}
+
+a.download:hover{
+    border: 1px solid var(--dorado);
+    color: var(--dorado);
 }
 
 #recursos{
@@ -114,6 +123,7 @@ a.download{
         min-height: none;
         height: auto;
         flex-direction: column;
+        width: auto;
     }
 
     .post .img-header{
@@ -124,6 +134,11 @@ a.download{
         max-height: 350px;
     }
 
+    a.download{
+      padding: 0.75em 0;  
+      font-size: 14px;
+    }
+
     .post-description{
         width: 100%;
         align-items: center;
@@ -131,17 +146,20 @@ a.download{
     }
 
     .posts-container h1{
-        font-size: 1.75em;
+        font-size: 1.55em;
     }
 
     .post p{
-        display: none;
+        margin-top: 0;
+        text-align: justify;
+        margin-bottom: .75em;
+        font-size: .75em;
     }
 
     .post h2{
         font-size: 1.25em;
-        margin-bottom: .85em;
-        text-align: center;
+        margin-bottom: .5em;
+        text-align: justify;
     }
     
 }

@@ -24,7 +24,7 @@
             <h1>Publicaciones</h1>
             <article id="recursos" class="post">
                 <div class="img-header">
-                    <img class="post-img" src="/img/ayj-logo.jpg" alt="">
+                    <img class="post-img" src="/img/posts/ayj-logo.jpg" alt="">
                 </div>
                 <div class="post-description">
                     <h2>recursos tecnicos</h2>
@@ -32,18 +32,19 @@
                     <a href="" class="download">ver recursos</a>
                 </div>
             </article>
-            <article class="post">
-                <div class="img-header">
-                    <img class="post-img" src="/img/Embarazo-adolescente.jpg" alt="">
-                </div>
-                <div class="post-description">
-                    <h2>Maternidades y paternidades</h2>
-                    <p>Este programa se creó con el fin de poner un foco especial a la salud
-                        y embarazos en adolescentes menores de 15 años y sus parejas, desde un
-                        modelo integral</p>
-                    <a href="" class="download">ver post</a>
-                </div>
-            </article>
+            <% posts.forEach(post => { %>
+                <article class="post">
+                    <div class="img-header">
+                        <img class="post-img" src=<%= post.img %>  alt="">
+                    </div>
+                    <div class="post-description">
+                        <h2><%= post.titulo %> </h2>
+                        <p><%= post.descripcion %></p>
+                        <a href="<%= post.url %>" class="download">ver post</a>
+                    </div>
+                </article>
+            <% }) %>
+            
         </div>
     </main>
 
