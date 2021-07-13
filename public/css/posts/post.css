@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5vh;
+    color: white;
+}
+
+.post-container{
+    max-width: 1300px;
+    width: 80%;
+    border: 2px solid rgba(128, 128, 128, 0.25);
+    padding: 2.5% 5%;
+}
+
+h1{
+    font-family: 'raleway';
+    font-weight: 800;
+    font-size: 3em;
+    color: var(--dorado);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1em;
+    margin-bottom: 1em;
+}
+
+h3{
+    font-size: 1.25em;
+    font-family: 'raleway';
+    font-weight: bold;
+    color: var(--dorado);
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: .5em;
+    margin-top: 1.75em;
+}
+
+p{
+    font-size: 1em;
+    font-family: 'roboto';
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 1em;
+    line-height: 2em;
+}
+
+h2{
+    font-family: 'raleway';
+    font-weight: 800;
+    font-size: 1.75em;
+    color: var(--dorado);
+    text-transform: uppercase;
+    text-align: left;
+    margin: 1.25em 0;
+    line-height: 1.5em;
+}
+
+.post-container a{
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+a.descarga{
+    color: white;
+    font-family: 'roboto';
+    padding: 1em 3em;
+    border: 1px solid var(--dorado);
+    text-transform: uppercase;
+}
+
+a.descarga:hover{
+    border: 1px solid white;
+}
+
+.recurso{
+    padding: 1.5em 0;
+}
+
+@media (max-width: 678px){
+    h1{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 1.15em;
+    }
+
+    p{
+        font-size: .85em;
+        text-align: justify;
+    }
+
+    a.descarga{
+        padding: 1em 1.5em;
+        font-size: .75em;
+    }
+
+    .post-container{
+        width: 90%;
+    }
+}
+
+

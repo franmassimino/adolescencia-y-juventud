@@ -165,12 +165,8 @@ textarea.success{
     }
 
     .contact-form h3{
-        font-size: 1.25em;
+        font-size: 1.5em;
         margin-bottom: 1.25em;
-    }
-
-    .contact-form label{
-        font-size: .75em;
     }
 
     .contact-form button{

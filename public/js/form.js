@@ -45,6 +45,7 @@ function checkInputs(){
 
 function setErrorFor(input, message) {
   input.classList.add('error')
+  input.classList.remove('success')
 }
 
 function setSuccesFor(input) {

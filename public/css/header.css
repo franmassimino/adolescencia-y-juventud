@@ -93,7 +93,8 @@ header a{
         color: white;
         text-decoration: none;
         text-transform: uppercase;
-        margin: 1em
+        margin: 1em;
+        font-size: 24px;
     }
 
     .mobile-menu.active{

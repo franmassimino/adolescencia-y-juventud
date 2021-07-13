@@ -45,14 +45,14 @@ const posts = [
         titulo: 'Casa de la juventud, PROYECTO INSTITUCIONAL',
         descripcion: 'HOGAR DE TRATAMIENTO DE PUERTAS ABIERTAS “BERNARDINO RIVADAVIA”. NIÑOS, ADOLESCENTES Y JÓVENES EN SITUACIÓN DE RIESGO SOCIAL Y VULNERABILIDAD SOCIAL',
         img: "/img/posts/casa-juventud.jpg",
-        url: "/posts/promoviendo-el-cuidado-de-la-salud-sexual",
+        url: "/posts/casa-de-la-juventud",
         id: 7,
     },
     {
         titulo: 'UNA MIRADA AL FUTURO',
         descripcion: 'Al definir la formación ciudadana se puede afirmar que esta consiste en un proceso que promueve en las personas valores sociales para que puedan participar y cooperar en el desarrollo de la sociedad con base en esos preceptos, orientados a fomentar el respeto...',
         img: "/img/posts/una-mirada-al-futuro.jpg",
-        url: "/posts/promoviendo-el-cuidado-de-la-salud-sexual",
+        url: "/posts/una-mirada-al-futuro",
         id: 8,
     },
     {

@@ -137,9 +137,64 @@ const posts = [
 
 
 module.exports = {
-    post: (req, res) => {
-        const postId = req.params.id 
-        let post = posts.find(post => post.id == postId)
-        res.send(post)
-    }
+    recursosTecnicos: (req, res) => {
+        res.render('./posts/recursos-tecnicos')
+    },
+    necesidadTrabajo: (req, res) => {
+        res.render('./posts/necesidad-de-trabajo')
+    },
+    meternidadesYPaternidades: (req, res) => {
+        res.render('./posts/maternidades-y-paternidades')
+    },
+    promoviendoCuidado: (req, res) => {
+        res.render('./posts/promoviendo-el-cuidado')
+    },
+    conociendoMiradas: (req, res) => {
+        res.render('./posts/conociendo-miradas')
+    },
+    aportandoExperiencias: (req, res) => {
+        res.render('./posts/aportando-experiencias')
+    },
+    valoresYSeguridad: (req, res) => {
+        res.render('./posts/valores-y-seguridad')
+    },
+    casaJuventud: (req, res) => {
+        res.render('./posts/casa-juventud')
+    },
+    miradaAlFuturo: (req, res) => {
+        res.render('./posts/mirada-al-futuro')
+    },
+    atencionPrimaria: (req, res) => {
+        res.render('./posts/atencion-primaria')
+    },
+    desarrolloAdolescente: (req, res) => {
+        res.render('./posts/desarrollo-adolescente')
+    },
+    rolDelPediatra: (req, res) => {
+        res.render('./posts/rol-del-pediatra')
+    },
+    diferentesEscenarios: (req, res) => {
+        res.render('./posts/diferentes-escenarios')
+    },
+    segmentoIgnorado: (req, res) => {
+        res.render('./posts/recursos-tecnicos')
+    },
+    estilosDeVida: (req, res) => {
+        res.render('./posts/estilos-de-vida')
+    },
+    violenciaEscolar: (req, res) => {
+        res.render('./posts/violencia-escolar')
+    },
+    violenciaIntrafamiliar: (req, res) => {
+        res.render('./posts/violencia-intrafamiliar')
+    },
+    formandoHijos: (req, res) => {
+        res.render('./posts/formando-hijos-responsables')
+    },
+    abusoSustancias: (req, res) => {
+        res.render('./posts/abuso-de-sustancias')
+    },
+    saludIntegral: (req, res) => {
+        res.render('./posts/salud-integral')
+    },
 }
