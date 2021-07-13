@@ -8,7 +8,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5vh;
+    margin: 2.5vh auto; 
     color: white;
 }
 
@@ -19,7 +19,8 @@ main{
     padding: 2.5% 5%;
 }
 
-h1{
+
+.post-container h1{
     font-family: 'raleway';
     font-weight: 800;
     font-size: 3em;
@@ -30,8 +31,8 @@ h1{
     margin-bottom: 1em;
 }
 
-h3{
-    font-size: 1.25em;
+.post-container h3{
+    font-size: 1.35em;
     font-family: 'raleway';
     font-weight: bold;
     color: var(--dorado);
@@ -41,24 +42,40 @@ h3{
     margin-top: 1.75em;
 }
 
-p{
-    font-size: 1em;
+.post-container p{
+    font-size: 1.25em;
     font-family: 'roboto';
-    font-weight: 300;
-    text-transform: uppercase;
+    font-weight: 400;
     text-align: left;
     margin-bottom: 1em;
     line-height: 2em;
 }
 
-h2{
+.post-container ul li{
+    font-size: 1em;
+    font-family: 'roboto';
+    font-weight: 300;
+    text-transform:uppercase;
+    text-align: left;
+    margin-bottom: 1em;
+    line-height: 2em;
+    color: var(--dorado);
+}
+
+.post-container ul{
+    margin-left: 2em;
+    margin-bottom: 3em;
+}
+
+.post-container h2{
     font-family: 'raleway';
     font-weight: 800;
-    font-size: 1.75em;
+    font-size: 2em;
     color: var(--dorado);
     text-transform: uppercase;
     text-align: left;
-    margin: 1.25em 0;
+    margin-top: 1.25em;
+    margin-bottom: .5em;
     line-height: 1.5em;
 }
 
@@ -70,9 +87,12 @@ h2{
 a.descarga{
     color: white;
     font-family: 'roboto';
-    padding: 1em 3em;
+    padding: 2em 3em;
     border: 1px solid var(--dorado);
     text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 2em;
 }
 
 a.descarga:hover{
@@ -84,26 +104,29 @@ a.descarga:hover{
 }
 
 @media (max-width: 678px){
-    h1{
-        font-size: 2em;
-    }
-
-    h2{
+    .post-container h1{
         font-size: 1.5em;
     }
 
-    h3{
-        font-size: 1.15em;
+    .post-container h2{
+        font-size: 1.25em;
+        
     }
 
-    p{
+    .post-container h3{
+        font-size: 1.15em;
+
+    }
+
+    .post-container p{
         font-size: .85em;
         text-align: justify;
     }
 
-    a.descarga{
-        padding: 1em 1.5em;
+    .post-container a.descarga{
+        padding: 1.5em;
         font-size: .75em;
+        margin:2em 0;
     }
 
     .post-container{
