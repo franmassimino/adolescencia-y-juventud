@@ -24,26 +24,26 @@ function checkInputs(){
   const mensajeValue = mensaje.value.trim();
   
   if (nombreValue === ''){
-    setErrorFor(nombre, 'Este campo no puede estar vacio');
+    setErrorFor(nombre);
   } else{
     setSuccesFor(nombre)
   }
   
   if (emailValue === ''){
-    setErrorFor(email, 'Este campo no puede estar vacio');
+    setErrorFor(email);
   } else{
     setSuccesFor(email)
   }
   
   if (mensajeValue === ''){
-    setErrorFor(mensaje, 'Este campo no puede estar vacio');
+    setErrorFor(mensaje);
   } else{
     setSuccesFor(mensaje)
   }
   
 }
 
-function setErrorFor(input, message) {
+function setErrorFor(input) {
   input.classList.add('error')
   input.classList.remove('success')
 }
