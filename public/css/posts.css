@@ -41,6 +41,23 @@ main{
     padding: 0;
 }
 
+.post-link{
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.post-description:hover h2{
+    color: var(--dorado);
+}
+
+
+.post-description:hover a.download{
+    color: var(--dorado);
+    border: 1px solid var(--dorado);
+}
+
+
+
 
 .post .img-header{
     width: 47%;
@@ -71,6 +88,7 @@ main{
     line-height: 1.5em;
     letter-spacing: .1em;
     font-size: 2em;
+    transition: all .3s ease;
 }
 
 .post-description p{
@@ -83,6 +101,7 @@ main{
     margin-top: 1em;
     text-align: justify;
     width: 100%;
+    transition: all .3s ease;
 }
 
 a.download{

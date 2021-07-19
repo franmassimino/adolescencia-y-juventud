@@ -38,9 +38,11 @@
                         <img class="post-img" src=<%= post.img %>  alt="">
                     </div>
                     <div class="post-description">
-                        <h2><%= post.titulo %> </h2>
-                        <p><%= post.descripcion %></p>
-                        <a href="<%= post.url %>" class="download">ver post</a>
+                        <a class="post-link" href="<%= post.url %>">
+                            <h2><%= post.titulo %> </h2>
+                            <p><%= post.descripcion %></p>
+                            <a href="<%= post.url %>" class="download">ver post</a>
+                        </a>
                     </div>
                 </article>
             <% }) %>
