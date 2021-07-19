@@ -39,6 +39,7 @@ main{
     min-height: 350px;
     height: 400px;
     padding: 0;
+    cursor: pointer;
 }
 
 .post-link{
