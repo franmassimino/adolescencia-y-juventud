@@ -47,12 +47,12 @@ main{
     transition: all .3s ease;
 }
 
-.post-description:hover h2{
+.post:hover h2{
     color: var(--dorado);
 }
 
 
-.post-description:hover a.download{
+.post:hover a.download{
     color: var(--dorado);
     border: 1px solid var(--dorado);
 }
