@@ -1,8 +1,8 @@
 :root{
     --gris-oscuro: #666666;
     --gris-claro: #7c7c7c;
-    --dorado: #E8C061;
-    --negro: rgb(34, 34, 34);
+    --dorado: #f38499;
+    --negro: #0190A0;
     --transition: all .3s ease;
 }
 
@@ -12,6 +12,7 @@ header{
     padding: 1.5em 5%;
     align-items: center;
     font-family: 'raleway';
+    
 }
 
 header a{
@@ -42,7 +43,7 @@ header a{
 }
 
 .desktop li a:hover{
-    color: var(--dorado);
+    color: #f38499;
 }
 
 .desktop li a{
