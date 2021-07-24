@@ -7,14 +7,14 @@
 }
 
 body{
-    background-color: #008F9F;
+    background-color: var(--negro);
 
 }
 
 :root{
     --gris-oscuro: #666666;
     --gris-claro: #7c7c7c;
-    --dorado: #f38499;
+    --dorado: #E8C061;
     --negro: rgb(34, 34, 34);
     --transition: all .3s ease;
 }
@@ -39,7 +39,6 @@ footer div{
  text-transform: uppercase;
  font-family: 'raleway';
  letter-spacing: .1em;
- font-size: 30px;
 }
 
 .footer-info a{
@@ -48,7 +47,7 @@ footer div{
 }
 
 .footer-info p{
-    color: rgb(228, 228, 228);
+    color: var(--gris-claro);
     font-family: 'roboto';
 }
 

@@ -16,11 +16,10 @@ main{
     justify-content: center;
     align-items: center;
     padding: 0 10%;
-    background-color: white;
 }
 
 .posts-container h1{
-    color:  #008F9F;
+    color: white;
     text-transform: uppercase;
     font-family: 'raleway';
     font-weight: 800;
@@ -32,7 +31,7 @@ main{
 
 .post{
     display: flex;
-    border: 1px solid  #008F9F;
+    border: 1px solid rgba(170, 170, 170, 0.623);
     height: auto;
     margin: 1em 0;
     max-width: 1100px;
@@ -49,13 +48,13 @@ main{
 }
 
 .post:hover h2{
-    color: #f38499 ;
+    color: var(--dorado);
 }
 
 
 .post:hover a.download{
-    color: #f38499 ;
-    border: 1px solid #f38499 ;
+    color: var(--dorado);
+    border: 1px solid var(--dorado);
 }
 
 
@@ -83,7 +82,7 @@ main{
 }
 
 .post-description h2{
-    color:  #008F9F;
+    color: white;
     font-family: 'raleway';
     font-weight: 800;
     margin:0;
@@ -94,7 +93,7 @@ main{
 }
 
 .post-description p{
-    color: #666666;
+    color: rgb(216, 216, 216);
     font-family: 'roboto';
     font-weight: 300;
     line-height: 2.25em;
@@ -108,8 +107,8 @@ main{
 
 a.download{
     text-decoration: none;
-    color:  #008F9F;
-    border: 1px solid  #008F9F;
+    color: white;
+    border: 1px solid rgba(170, 170, 170, 0.623);
     transition: all .3s ease;
     padding: 1em 0;
     margin-top: auto;
@@ -120,20 +119,20 @@ a.download{
 }
 
 a.download:hover{
-    border: 1px solid #f38499 ;
-    color: #f38499 ;
+    border: 1px solid var(--dorado);
+    color: var(--dorado);
 }
 
 #recursos{
-    border: 2px solid  #008F9F;
+    border: 2px solid var(--dorado);
 }
 
 #recursos h2{
-    color:  #008F9F;
+    color: var(--dorado);
 }
 
 #recursos a{
-    border: 1px solid  #008F9F;
+    border: 1px solid var(--dorado);
 
 }
 
