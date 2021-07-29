@@ -105,6 +105,7 @@ header a{
         display: flex;
         overflow:hidden;
         z-index: 2;
+        max-height: 100vh;
     }
 
     body.active{
