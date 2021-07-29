@@ -167,6 +167,11 @@ p{
 
 @media (max-width:1024px) {
     /*acerca de*/
+    .acerca-de{
+        padding: 1.5em 2.5%;
+    }
+
+
     .content h3{
         text-align: center;
         font-size: 1.25em;
