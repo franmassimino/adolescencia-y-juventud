@@ -146,6 +146,10 @@ a.download:hover{
         width: auto;
     }
 
+    .posts-container{
+        padding: 0 5%;
+    }
+
     .post .img-header{
         width: 100%;
     }

@@ -184,7 +184,9 @@ iframe{
     }
 
     .post-container{
-        width: 90%;
+        width: 95%;
+        padding: 2.5% 5% ;
+
     }
 
     iframe{
