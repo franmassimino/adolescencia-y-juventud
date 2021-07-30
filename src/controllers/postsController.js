@@ -20,13 +20,13 @@ const posts = [
         url: "/posts/promoviendo-el-cuidado-de-la-salud-sexual",
         id: 3,
     },
-    {
+/*     {
         titulo: 'DIFERENTES MIRADAS A TRAVÉS DEL TIEMPO SOBRE LA ADOLESCENCIA',
         descripcion: 'OBJETIVOS: conocer las diferentes interpretaciones dadas por diferentes autores desde distintas disciplinas, en diferentes etapas históricas hasta nuestros días.',
         img: "/img/posts/diferentes-miradas.jpg",
         url: "/posts/conociendo-diferentes-miradas",
         id: 4,
-    },
+    }, */
     {
         titulo: 'APORTANDO EXPERIENCIAS INNOVADORAS PARA LOS EQUIPOS DE SALUD',
         descripcion: '"HOY lo importante es trabajar donde los adolescentes y jovenes se encuentran. LA FAMILIA, LA ESCUELA, EL BARRIO". Dr. Roldan',
