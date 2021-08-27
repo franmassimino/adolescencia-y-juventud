@@ -147,7 +147,7 @@ body{
     background-size: cover;
 }
 
-.swiper-container {
+.swiper {
     min-width:800px;
     width: 90%;
     height: 100%;
@@ -225,18 +225,18 @@ body{
     }
 
     /*Carrusel*/
-    .swiper-container {
+    .swiper {
         min-width:400px;
         width: 95%;
         height: 100%;
         display: flex;
       }
 
-      .swiper-container h3{
+      .swiper h3{
           font-size: 1.5em;
       }
 
-      .swiper-container p{
+      .swiper p{
           font: 1em;
       }
 
