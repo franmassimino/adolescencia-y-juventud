@@ -14,7 +14,7 @@ function inputValidation(e){
         email.classList.remove('success')
         mensaje.classList.remove('success')
     } else {
-        setTimeout(function(){ alert('Por favor complete todos los campos'); }, 100);
+        return
     }
 }
 
